@@ -11,10 +11,8 @@ function save_options() {
 }
 
 function restore_options() {
-  chrome.storage.sync.get({
-    match_globs: null,
-  }, function(items) {
-    document.getElementById('match_globs').value = items.match_globs
+  getMatchGlobs(function(match_globs) {
+    document.getElementById('match_globs').value = match_globs
   });
 }
 

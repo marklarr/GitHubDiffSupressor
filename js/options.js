@@ -12,7 +12,7 @@ function save_options() {
 
 function restore_options() {
   chrome.storage.sync.get({
-    match_globs: '',
+    match_globs: null,
   }, function(items) {
     document.getElementById('match_globs').value = items.match_globs
   });

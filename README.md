@@ -3,7 +3,7 @@ A chrome extension that allows you to use regular expressions to suppress diffs 
 ## Usage
 
 * Add your regular expressions to the chrome extension's options page (some iOS ones are already there by default)
-* View a pull-request and see the suppressions! You can see a suppressed diff by clicking `Diff suppressed. Click to show.`
+* View a pull-request and see that files matching your regular expressions are suppressed. You can see the diffs by clicking `Diff suppressed. Click to show.`
 
 ## TODO
 
@@ -11,6 +11,7 @@ A chrome extension that allows you to use regular expressions to suppress diffs 
 * Write some CSS for the options screen
 * Error handling for invalid regular expressions
 * Support for suppressing image diffs
+* Tests
 
 ## Contributing
 

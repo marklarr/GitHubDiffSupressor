@@ -1,6 +1,6 @@
 function save_options() {
   chrome.storage.sync.set({
-    match_globs: document.getElementById('match_globs').value,
+    match_regexes: document.getElementById('match_regexes').value,
   }, function() {
     var status = document.getElementById('status');
     status.textContent = 'Options saved.';
@@ -11,8 +11,8 @@ function save_options() {
 }
 
 function restore_options() {
-  getMatchGlobs(function(match_globs) {
-    document.getElementById('match_globs').value = match_globs
+  getMatchRegexes(function(match_regexes) {
+    document.getElementById('match_regexes').value = match_regexes
   });
 }
 

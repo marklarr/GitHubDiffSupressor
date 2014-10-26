@@ -3,8 +3,8 @@ function newDiffSuprressedDiv() {
 }
 
 
-getMatchGlobs(function(match_globs) {
-  var match_globs = match_globs.split("\n")
+getMatchRegexes(function(match_regexes) {
+  var match_regexes = match_regexes.split("\n")
   var file_diff_containers = $('div.meta.clearfix')
 
   file_diff_containers = file_diff_containers.filter(function(i, element) {
@@ -16,7 +16,7 @@ getMatchGlobs(function(match_globs) {
 
     var match_happened = false
     // Check if there is a match on some glob against the file name
-    $(match_globs).each(function(i, match_glob){
+    $(match_regexes).each(function(i, match_glob){
       var regex = new RegExp(match_glob)
       if ($(element).attr("data-path").match(regex)) {
         match_happened = true

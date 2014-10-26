@@ -1,7 +1,7 @@
-function getMatchGlobs(callback) {
+function getMatchRegexes(callback) {
   chrome.storage.sync.get({
-    match_globs: ".*Pods\/.*\n.*\.xcdatamodel.*\n.*\.xcdatamodeld.*",
+    match_regexes: ".*Pods\/.*\n.*\.xcdatamodel.*\n.*\.xcdatamodeld.*",
   }, function(items) {
-    callback(items.match_globs)
+    callback(items.match_regexes)
   });
 }

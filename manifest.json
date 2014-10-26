@@ -1,0 +1,14 @@
+{
+  "name": "GitHub Diff Suppressor",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["lib/minimatch.js", "lib/jquery.min.js", "js/suppressor.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "description": "Choose which file diffs you'd like to suppress on GitHub while reviewing pull requests.",
+  "options_page": "views/options.html"
+}

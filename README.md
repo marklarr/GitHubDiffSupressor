@@ -15,6 +15,6 @@ A chrome extension that allows you to use regular expressions to suppress diffs 
 
 ## Contributing
 
-We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new Github issue](https://github.com/venmo/synx/issues/new) if you find bugs or have questions. :octocat:
+We'd love to see your ideas for improving this extension! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new Github issue](https://github.com/marklarr/GitHubDiffSupressor/issues/new) if you find bugs or have questions. :octocat:
 
 Please make sure to follow our general coding style and add test coverage for new features!

@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head><title>My Test Extension Options</title></head>
+<head><title>GitHub Diff Suppressor Options</title></head>
 <body>
 
-Favorite color:
-<select id="color">
- <option value="red">red</option>
- <option value="green">green</option>
- <option value="blue">blue</option>
- <option value="yellow">yellow</option>
-</select>
+Matching file globs to suppress (1 per line):
+<textarea id="match_globs" rows="10" cols="50">
 
-<label>
-  <input type="checkbox" id="like">
-  I like colors.
-</label>
+</textarea>
 
 <div id="status"></div>
 <button id="save">Save</button>
 
-<script src="options.js"></script>
+<script src="../js/options.js"></script>
 </body>
 </html>

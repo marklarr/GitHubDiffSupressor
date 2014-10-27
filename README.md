@@ -1,5 +1,9 @@
 A chrome extension that allows you to use regular expressions to suppress diffs on Pull Requests
 
+## Installation
+
+[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/github-diff-suppressor/jmaoikhopajjepkldkedbjjkfhnimfep)
+
 ## Usage
 
 * Add your regular expressions to the chrome extension's options page (some iOS ones are already there by default)

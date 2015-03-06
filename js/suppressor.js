@@ -1,5 +1,5 @@
 function newDiffSuprressedDiv() {
-  return $.parseHTML('<div class="image"> <a href="#" class="js-details-target">Diff suppressed. Click to show.</a </div>')[0]
+  return $.parseHTML('<div class="image"> <a href="#" class="js-details-target">Diff suppressed.</a </div>')[0]
 }
 
 

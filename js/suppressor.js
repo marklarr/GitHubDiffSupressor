@@ -5,7 +5,7 @@ function newDiffSuprressedDiv() {
 
 getMatchRegexes(function(match_regexes) {
   var match_regexes = match_regexes.split("\n")
-  var file_diff_containers = $('div.meta.clearfix')
+  var file_diff_containers = $('.file')
 
   file_diff_containers = file_diff_containers.filter(function(i, element) {
 
@@ -18,7 +18,7 @@ getMatchRegexes(function(match_regexes) {
     // Check if there is a match on some glob against the file name
     $(match_regexes).each(function(i, match_glob){
       var regex = new RegExp(match_glob)
-      if ($(element).attr("data-path").match(regex)) {
+      if ($(element).find('.file-header').attr("data-path").match(regex)) {
         match_happened = true
       }
     });
@@ -27,7 +27,7 @@ getMatchRegexes(function(match_regexes) {
   })
 
   file_diff_containers.each(function(i, element) {
-    $(element).next("div.data.highlight").addClass("suppressed")
+    $(element).find("div.data.highlight").addClass("suppressed")
     $(element).after(newDiffSuprressedDiv())
   })
 });
